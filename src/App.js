@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import UserManagement from "./pages/UserManagement";
+import RoleManagement from "./pages/RoleManagement";
 
-function App() {
+const App = () => {
+  const [currentPage, setCurrentPage] = useState("users");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <button onClick={() => setCurrentPage("users")}>User Management</button>
+        <button onClick={() => setCurrentPage("roles")}>Role Management</button>
+
+      </nav>
+      {currentPage === "users" ? <UserManagement /> : <RoleManagement />}
     </div>
   );
-}
+};
+
+
 
 export default App;

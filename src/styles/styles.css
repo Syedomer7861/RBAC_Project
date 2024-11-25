@@ -1,0 +1,203 @@
+/* Universal Reset */
+* {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Modern and professional font */
+  background-color: #f8f9fa; /* Neutral background */
+  color: #212529; /* Dark gray for better readability */
+  line-height: 1.6;
+  margin: 0;
+}
+header {
+  background-color: #1c1f27; /* Dark neutral tone */
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: 700;
+  color: #007bff;
+}
+
+header nav a {
+  color: #ffffff;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #007bff; /* Accent color */
+}
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem; /* Reduced padding for smaller size */
+  font-size: 0.875rem; /* Smaller font size */
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 3px 8px rgba(0, 123, 255, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Styles for buttons with icons */
+button .icon {
+  margin-right: 0.5rem; /* Space between icon and text */
+  font-size: 1rem; /* Adjust icon size */
+  line-height: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+th {
+  background-color: #1c1f27;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f1f3f5;
+  cursor: pointer;
+}
+form input, form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form select:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-content {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+footer {
+  background-color: #1c1f27;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  border-top: 1px solid #343a40;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #1c1f27;
+}
+
+p {
+  color: #495057;
+  margin-bottom: 1rem;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+
+.btn {
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
